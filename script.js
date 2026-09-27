@@ -3,7 +3,7 @@
 
   const CONFIG = {
     inviteUrl: "https://discord.com/oauth2/authorize?client_id=1553813680800534701",
-    stripeUrl: "https://buy.stripe.com/00wcN4brsaHd8TA9W42oE01",
+    stripeUrl: "https://buy.stripe.com/bJe4gy3Z02aHedU3xG2oE00",
     supportUrl: "https://discord.gg/orbitdc"
   };
 
