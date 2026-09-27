@@ -3,8 +3,8 @@
 
   const CONFIG = {
     inviteUrl: "https://discord.com/oauth2/authorize?client_id=1553813680800534701",
-    stripeUrl: "YOUR_STRIPE_PAYMENT_LINK",
-    supportUrl: "https://discord.gg/"
+    stripeUrl: "https://buy.stripe.com/00wcN4brsaHd8TA9W42oE01",
+    supportUrl: "https://discord.gg/orbitdc"
   };
 
   // ---- wire up buttons to config urls -------------------------------
