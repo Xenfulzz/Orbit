@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Payment complete — Orbit</title>
+<meta name="description" content="Your Orbit payment is complete. Here is exactly what to do next to receive and redeem your licence key.">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#3560f0">
+<meta name="color-scheme" content="dark">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Orbit">
+<meta property="og:url" content="https://orbitdc.dev/success.html">
+<meta property="og:title" content="Payment complete — Orbit">
+<meta property="og:description" content="Your Orbit payment is complete. Here is exactly what to do next to receive and redeem your licence key.">
+<meta property="og:image" content="https://orbitdc.dev/assets/orbit-mascot.png">
+<meta property="og:image:alt" content="Orbit — a glossy blue ringed planet mascot">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Payment complete — Orbit">
+<meta name="twitter:description" content="Your Orbit payment is complete. Here is exactly what to do next to receive and redeem your licence key.">
+<meta name="twitter:image" content="https://orbitdc.dev/assets/orbit-mascot.png">
+<link rel="icon" type="image/png" href="assets/orbit-mascot.png">
+<link rel="apple-touch-icon" href="assets/orbit-mascot.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></symbol>
+</svg>
+<header class="nav-wrap" id="siteNav">
+  <nav class="nav" aria-label="Primary">
+    <a href="index.html" class="nav-logo" aria-label="Orbit — home"><img src="assets/orbit-logo.png" alt="Orbit" width="84" height="28"></a>
+    <div class="nav-menu" id="navMenu">
+      <ul class="nav-links">
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="index.html#commands">Commands</a></li>
+        <li><a href="index.html#pricing">Pricing</a></li>
+        <li><a href="#" data-action="support">Support</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn btn-ghost btn-sm" data-action="invite">Add to Discord</a>
+        <a href="#" class="btn btn-primary btn-sm" data-action="support">Join Support</a>
+      </div>
+    </div>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu"><span class="bars"></span></button>
+  </nav>
+</header>
+
+<main class="page" id="main">
+  <div class="container">
+    <div class="page-narrow success">
+      <div class="success-icon" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></div>
+      <h1>Payment complete.</h1>
+      <p class="lede">Thank you for buying Orbit. Here's exactly what to do next to get your licence key and activate the bot.</p>
+
+      <section class="steps-card" aria-labelledby="next-title">
+        <h2 id="next-title">Your next steps</h2>
+        <ol class="timeline">
+          <li>
+            <h4>Join the Orbit Support Server</h4>
+            <p>This is where we verify your purchase and provide your unique lifetime licence key.</p>
+          </li>
+          <li>
+            <h4>Open a support ticket</h4>
+            <p>Open a ticket and provide your Stripe payment details when requested.</p>
+          </li>
+          <li>
+            <h4>Receive your licence key</h4>
+            <p>Once your purchase is verified, Orbit Support will provide your unique licence key.</p>
+          </li>
+          <li>
+            <h4>Add Orbit and redeem</h4>
+            <p>Add Orbit to your server, then use <code>/licence redeem</code> with your key to unlock the bot.</p>
+          </li>
+        </ol>
+        <div class="success-actions">
+          <a class="btn btn-primary btn-lg" href="#" data-action="support">Join the Support Server</a>
+          <a class="btn btn-secondary btn-lg" href="#" data-action="invite">Add Orbit to Discord</a>
+        </div>
+      </section>
+
+      <p class="notice"><strong>Your licence key isn't shown on this page.</strong> Keys are provided by Orbit Support after your purchase has been verified in the support server.</p>
+      <p class="back"><a class="link-arrow" href="index.html">Back to Orbit</a></p>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/orbit-logo.png" alt="Orbit" width="90" height="30" loading="lazy">
+        <p>Everything your Discord server needs, in one bot.</p>
+      </div>
+      <nav class="footer-col" aria-label="Product">
+        <h2>Product</h2>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#security">Security</a>
+        <a href="index.html#commands">Commands</a>
+        <a href="index.html#pricing">Pricing</a>
+      </nav>
+      <nav class="footer-col" aria-label="Get Orbit">
+        <h2>Get Orbit</h2>
+        <a href="#" data-action="stripe">Buy Orbit</a>
+        <a href="#" data-action="invite">Add to Discord</a>
+        <a href="#" data-action="support">Support server</a>
+      </nav>
+      <nav class="footer-col" aria-label="Legal">
+        <h2>Legal</h2>
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year">2026</span> Orbit.</span>
+      <span>Not affiliated with Discord Inc.</span>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orbit — The all-in-one Discord bot for moderation, tickets and security</title>
+<meta name="description" content="Moderation, tickets, security, roles, giveaways and more in one Discord bot. One-time £7.99 lifetime licence. No subscription.">
+<meta name="theme-color" content="#3560f0">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://orbitdc.dev/">
+
+<!-- Open Graph (Discord, Slack, Facebook…) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Orbit">
+<meta property="og:url" content="https://orbitdc.dev/">
+<meta property="og:title" content="Orbit — Everything your Discord server needs">
+<meta property="og:description" content="Moderation, tickets, security, roles, giveaways and more in one Discord bot. One-time £7.99 lifetime licence. No subscription.">
+<meta property="og:image" content="https://orbitdc.dev/assets/orbit-mascot.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1254">
+<meta property="og:image:height" content="1254">
+<meta property="og:image:alt" content="Orbit — a glossy blue ringed planet mascot">
+<meta property="og:locale" content="en_GB">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Orbit — Everything your Discord server needs">
+<meta name="twitter:description" content="Moderation, tickets, security, roles, giveaways and more in one Discord bot. One-time £7.99 lifetime licence. No subscription.">
+<meta name="twitter:image" content="https://orbitdc.dev/assets/orbit-mascot.png">
+<meta name="twitter:image:alt" content="Orbit — a glossy blue ringed planet mascot">
+
+<link rel="icon" type="image/png" href="assets/orbit-mascot.png">
+<link rel="apple-touch-icon" href="assets/orbit-mascot.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Icon sprite -->
+<svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8a3 3 0 016 0"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5z"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/></symbol>
+</svg>
+
+<!-- NAV -->
+<header class="nav-wrap" id="siteNav">
+  <nav class="nav" aria-label="Primary">
+    <a href="#top" class="nav-logo" aria-label="Orbit — back to top"><img src="assets/orbit-logo.png" alt="Orbit" width="84" height="28"></a>
+    <div class="nav-menu" id="navMenu">
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#commands">Commands</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#" data-action="support">Support</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn btn-ghost btn-sm" data-action="invite">Add to Discord</a>
+        <a href="#" class="btn btn-primary btn-sm" data-action="stripe">Buy Orbit</a>
+      </div>
+    </div>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu"><span class="bars"></span></button>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="starfield" id="heroStars" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1 id="hero-title">Everything your Discord server needs, in one bot.</h1>
+        <p class="lede">Moderation, tickets, security, roles, logging and more — in one Discord bot, for a single one-time payment.</p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary btn-lg" data-action="stripe">Buy Orbit · £7.99</a>
+          <a href="#" class="btn btn-secondary btn-lg" data-action="invite">Add to Discord</a>
+        </div>
+        <ul class="hero-points">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Lifetime licence</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>One-time payment</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>No subscription</li>
+        </ul>
+        <p class="hero-support">Already bought Orbit? <a href="#" data-action="support">Get your licence key in the support server</a></p>
+      </div>
+      <div class="hero-stage" aria-hidden="true">
+        <span class="ring r2"></span>
+        <span class="ring r1"></span>
+        <img class="hero-mascot" src="assets/orbit-mascot.png" alt="" width="1254" height="1254" fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <!-- THREE CLEAR PATHS -->
+  <section class="paths" aria-labelledby="paths-title">
+    <h2 class="sr-only" id="paths-title">Get started with Orbit</h2>
+    <div class="container">
+      <div class="paths-grid">
+        <div class="path is-primary">
+          <span class="path-label"><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg>New to Orbit</span>
+          <h3>Buy a lifetime licence</h3>
+          <p>£7.99 one-time via secure Stripe checkout. Covers one Discord server, no renewals.</p>
+          <a href="#" class="btn btn-primary" data-action="stripe">Buy Orbit</a>
+        </div>
+        <div class="path">
+          <span class="path-label"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>Ready to set up</span>
+          <h3>Add Orbit to your server</h3>
+          <p>Invite the bot, then unlock it with <code>/licence redeem</code> and your licence key.</p>
+          <a href="#" class="btn btn-secondary" data-action="invite">Add to Discord</a>
+        </div>
+        <div class="path">
+          <span class="path-label"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Already bought</span>
+          <h3>Get your key and support</h3>
+          <p>Join the support server for your licence key, setup help and purchase questions.</p>
+          <a href="#" class="btn btn-ghost" data-action="support">Join Support</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section alt" id="features" aria-labelledby="features-title">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Features</span>
+        <h2 id="features-title">One bot. Every tool your server needs.</h2>
+        <p>Orbit brings moderation, tickets, security and community tools into one place, so you can stop juggling five different bots to run one server.</p>
+        <ul class="module-list" aria-label="Orbit modules">
+          <li class="tag">Moderation</li>
+          <li class="tag">Tickets</li>
+          <li class="tag">Security</li>
+          <li class="tag">Logging</li>
+          <li class="tag">Roles</li>
+          <li class="tag">Giveaways</li>
+          <li class="tag">Levels</li>
+          <li class="tag">Verification</li>
+        </ul>
+      </div>
+
+      <!-- Moderation -->
+      <div class="feature-row reveal">
+        <div class="feature-text">
+          <h3>Moderation without the mess.</h3>
+          <p>Warn, kick, ban, timeout and purge messages from one consistent set of commands, with every action logged automatically.</p>
+          <ul class="feature-tags">
+            <li class="tag">Warn &amp; timeout</li>
+            <li class="tag">Case history</li>
+            <li class="tag">Auto-logging</li>
+          </ul>
+        </div>
+        <div class="feature-visual" aria-hidden="true">
+          <div class="dc">
+            <div class="dc-channel">#&nbsp;mod-log</div>
+            <div class="dc-body">
+              <div class="dc-msg">
+                <div class="dc-avatar"><img src="assets/orbit-mascot.png" alt="" loading="lazy" width="64" height="64"></div>
+                <div class="dc-main">
+                  <div class="dc-name">Orbit <span class="dc-bot">BOT</span></div>
+                  <div class="dc-embed">
+                    <div class="dc-embed-title">Case #482 · Timeout</div>
+                    <dl class="dc-fields">
+                      <div class="dc-field"><dt>User</dt><dd>@finn</dd></div>
+                      <div class="dc-field"><dt>Duration</dt><dd>10 minutes</dd></div>
+                      <div class="dc-field wide"><dt>Reason</dt><dd>Spamming in #general</dd></div>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tickets -->
+      <div class="feature-row reverse reveal">
+        <div class="feature-text">
+          <h3>Support, sorted.</h3>
+          <p>Members open a ticket, your team claims it, and everything is wrapped up with a transcript when it's closed. No more lost DMs.</p>
+          <ul class="feature-tags">
+            <li class="tag">Create</li>
+            <li class="tag">Claim</li>
+            <li class="tag">Close</li>
+            <li class="tag">Transcript</li>
+          </ul>
+        </div>
+        <div class="feature-visual" aria-hidden="true">
+          <div class="dc">
+            <div class="dc-channel">#&nbsp;ticket-0231</div>
+            <div class="dc-body">
+              <div class="dc-msg">
+                <div class="dc-avatar"><img src="assets/orbit-mascot.png" alt="" loading="lazy" width="64" height="64"></div>
+                <div class="dc-main">
+                  <div class="dc-name">Orbit <span class="dc-bot">BOT</span></div>
+                  <div class="dc-embed">
+                    <div class="dc-embed-title">Ticket opened</div>
+                    <div class="dc-embed-desc">Billing question</div>
+                  </div>
+                  <div class="dc-buttons">
+                    <span class="dc-btn primary">Claim</span>
+                    <span class="dc-btn">Close</span>
+                    <span class="dc-btn">Transcript</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Security -->
+      <div class="feature-row reveal" id="security">
+        <div class="feature-text">
+          <h3>Keep the bad stuff out.</h3>
+          <p>AutoMod, spam protection and raid defences run quietly in the background, so your server stays safe without constant babysitting.</p>
+          <ul class="feature-tags">
+            <li class="tag">AutoMod</li>
+            <li class="tag">Spam protection</li>
+            <li class="tag">Link &amp; invite protection</li>
+            <li class="tag">Verification</li>
+            <li class="tag">Honeypots</li>
+          </ul>
+        </div>
+        <div class="feature-visual" aria-hidden="true">
+          <div class="dc">
+            <div class="dc-shield"><svg class="icon"><use href="#i-shield"/></svg><strong>Server protection</strong></div>
+            <div class="dc-body">
+              <ul class="dc-checklist">
+                <li><svg class="icon"><use href="#i-check"/></svg>AutoMod</li>
+                <li><svg class="icon"><use href="#i-check"/></svg>Spam protection</li>
+                <li><svg class="icon"><use href="#i-check"/></svg>Link &amp; invite protection</li>
+                <li><svg class="icon"><use href="#i-check"/></svg>Verification</li>
+                <li><svg class="icon"><use href="#i-check"/></svg>Honeypots</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Roles -->
+      <div class="feature-row reverse reveal">
+        <div class="feature-text">
+          <h3>Give your members more control.</h3>
+          <p>Set up self-role panels so people can pick colours, pronouns, games and notification roles with a single click.</p>
+          <ul class="feature-tags">
+            <li class="tag">Self-role panels</li>
+            <li class="tag">Reaction roles</li>
+          </ul>
+        </div>
+        <div class="feature-visual" aria-hidden="true">
+          <div class="dc">
+            <div class="dc-channel">#&nbsp;pick-your-roles</div>
+            <div class="dc-body">
+              <div class="dc-msg">
+                <div class="dc-avatar"><img src="assets/orbit-mascot.png" alt="" loading="lazy" width="64" height="64"></div>
+                <div class="dc-main">
+                  <div class="dc-name">Orbit <span class="dc-bot">BOT</span></div>
+                  <div class="dc-embed">
+                    <div class="dc-embed-title">Choose your roles</div>
+                    <div class="dc-embed-desc">Click a button to add or remove a role.</div>
+                  </div>
+                  <div class="dc-buttons">
+                    <span class="dc-btn primary"><span class="em">🎮</span>Gamer</span>
+                    <span class="dc-btn"><span class="em">🎨</span>Artist</span>
+                    <span class="dc-btn"><span class="em">📢</span>Announcements</span>
+                    <span class="dc-btn"><span class="em">🌙</span>Night owl</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Community -->
+      <div class="feature-row reveal">
+        <div class="feature-text">
+          <h3>Make your server feel alive.</h3>
+          <p>Run giveaways, greet new members properly, and let people level up as they chat — the small touches that keep a community coming back.</p>
+          <ul class="feature-tags">
+            <li class="tag">Giveaways</li>
+            <li class="tag">Welcome messages</li>
+            <li class="tag">Levels &amp; XP</li>
+            <li class="tag">Fun commands</li>
+          </ul>
+        </div>
+        <div class="feature-visual" aria-hidden="true">
+          <div class="dc">
+            <div class="dc-channel">#&nbsp;general</div>
+            <div class="dc-body">
+              <div class="dc-msg">
+                <div class="dc-avatar"><img src="assets/orbit-mascot.png" alt="" loading="lazy" width="64" height="64"></div>
+                <div class="dc-main">
+                  <div class="dc-name">Orbit <span class="dc-bot">BOT</span></div>
+                  <div class="dc-text">Level up! <b>@maya</b> reached level 12.</div>
+                  <div class="dc-progress"><i></i></div>
+                </div>
+              </div>
+              <div class="dc-msg">
+                <div class="dc-avatar"><img src="assets/orbit-mascot.png" alt="" loading="lazy" width="64" height="64"></div>
+                <div class="dc-main">
+                  <div class="dc-name">Orbit <span class="dc-bot">BOT</span></div>
+                  <div class="dc-embed">
+                    <div class="dc-embed-title">🎉 Giveaway: Nitro Boost</div>
+                    <div class="dc-embed-desc">Ends in 2 hours · 84 entries</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="examples-note">Screens above are illustrative examples of how Orbit looks in Discord.</p>
+    </div>
+  </section>
+
+  <!-- COMMANDS -->
+  <section class="section" id="commands" aria-labelledby="commands-title">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Commands</span>
+        <h2 id="commands-title">Slash commands you'll actually remember.</h2>
+        <p>A consistent set of slash commands for everything Orbit does.</p>
+      </div>
+      <div class="command-panel reveal" role="list">
+        <div class="command-row" role="listitem">
+          <div class="command-main"><div class="cmd mono"><span class="slash">/</span>ban <span class="arg">@user</span></div><div class="desc">Remove a member from the server</div></div>
+          <span class="command-tag">Moderation</span>
+        </div>
+        <div class="command-row" role="listitem">
+          <div class="command-main"><div class="cmd mono"><span class="slash">/</span>timeout <span class="arg">@user duration: 10m</span></div><div class="desc">Temporarily restrict a member</div></div>
+          <span class="command-tag">Moderation</span>
+        </div>
+        <div class="command-row" role="listitem">
+          <div class="command-main"><div class="cmd mono"><span class="slash">/</span>ticket setup</div><div class="desc">Create your support ticket panel</div></div>
+          <span class="command-tag">Tickets</span>
+        </div>
+        <div class="command-row" role="listitem">
+          <div class="command-main"><div class="cmd mono"><span class="slash">/</span>automod setup</div><div class="desc">Configure spam and link protection</div></div>
+          <span class="command-tag">Security</span>
+        </div>
+        <div class="command-row" role="listitem">
+          <div class="command-main"><div class="cmd mono"><span class="slash">/</span>giveaway start</div><div class="desc">Launch a giveaway in seconds</div></div>
+          <span class="command-tag">Giveaways</span>
+        </div>
+        <div class="command-row" role="listitem">
+          <div class="command-main"><div class="cmd mono"><span class="slash">/</span>role panel create</div><div class="desc">Build a self-role selection panel</div></div>
+          <span class="command-tag">Roles</span>
+        </div>
+        <div class="command-row" role="listitem">
+          <div class="command-main"><div class="cmd mono"><span class="slash">/</span>verification setup</div><div class="desc">Add a verification gate for new members</div></div>
+          <span class="command-tag">Verification</span>
+        </div>
+        <div class="command-row" role="listitem">
+          <div class="command-main"><div class="cmd mono"><span class="slash">/</span>level</div><div class="desc">Check your current level and XP</div></div>
+          <span class="command-tag">Levels</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERMISSIONS -->
+  <section class="section alt" id="permissions" aria-labelledby="perm-title">
+    <div class="container">
+      <div class="perm-wrap reveal">
+        <div class="section-head">
+          <span class="eyebrow">Permissions</span>
+          <h2 id="perm-title">Orbit needs the right permissions to work.</h2>
+          <p>Discord requires certain permissions for different features to function. Orbit only asks for what it actually uses, and nothing runs until you grant it.</p>
+          <a href="#" class="btn btn-secondary" data-action="invite">Add to Discord</a>
+        </div>
+        <ul class="perm-list">
+          <li class="perm-item"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Manage messages</li>
+          <li class="perm-item"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Manage roles</li>
+          <li class="perm-item"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Kick members</li>
+          <li class="perm-item"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Ban members</li>
+          <li class="perm-item"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Moderate members</li>
+          <li class="perm-item"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Manage channels</li>
+          <li class="perm-item"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>View channels</li>
+          <li class="perm-item"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Send messages</li>
+          <li class="perm-item"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Embed links</li>
+          <li class="perm-item"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Attach files</li>
+          <li class="perm-item"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Read message history</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING + AFTER PURCHASE -->
+  <section class="section" id="pricing" aria-labelledby="pricing-title">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Pricing</span>
+        <h2 id="pricing-title">One payment. One licence.</h2>
+        <p>Everything Orbit can do, for as long as your server needs it. No renewals, ever.</p>
+      </div>
+      <div class="pricing-wrap reveal">
+        <div class="price-card" id="buy">
+          <div class="price-label">Orbit lifetime licence</div>
+          <div class="price-amount"><span class="num">£7.99</span><span class="price-badge">Lifetime</span></div>
+          <p class="price-sub">One-time payment. No subscription.</p>
+          <ul class="price-list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Full Orbit access</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>All features included</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Lifetime updates</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Covers one Discord server</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>No recurring subscription</li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-lg btn-block" data-action="stripe">Buy Orbit for £7.99</a>
+          <p class="price-note"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg><span>Secure checkout via Stripe. After payment, join our support server to receive your unique licence key. Questions first? <a href="#" data-action="support">Ask in the support server</a>.</span></p>
+        </div>
+
+        <div class="after" id="how-it-works">
+          <h3>What happens after you pay</h3>
+          <p>Licence keys are issued through the Orbit Support Server. Here's the full process.</p>
+          <ol class="timeline">
+            <li>
+              <h4>Buy Orbit</h4>
+              <p>Complete the secure £7.99 payment through Stripe.</p>
+            </li>
+            <li>
+              <h4>Join the support server</h4>
+              <p>Join the Orbit Support Server and open a support ticket.</p>
+              <a href="#" class="link-arrow" data-action="support">Join Support <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </li>
+            <li>
+              <h4>Get your licence key</h4>
+              <p>Send your Stripe payment details in your ticket. We'll verify your purchase and provide your unique licence key.</p>
+            </li>
+            <li>
+              <h4>Activate Orbit</h4>
+              <p>Add Orbit to your server and use <code>/licence redeem</code> with your key to unlock the bot.</p>
+              <a href="#" class="link-arrow" data-action="invite">Add to Discord <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUPPORT -->
+  <section class="section alt" id="support" aria-labelledby="support-title">
+    <div class="container">
+      <div class="support-wrap reveal">
+        <div class="section-head">
+          <span class="eyebrow">Support</span>
+          <h2 id="support-title">Help lives in the Orbit Support Server.</h2>
+          <p>Join our Discord server to get your licence key, or to ask for help with setup, your purchase or anything else about Orbit.</p>
+          <a href="#" class="btn btn-ghost btn-lg" data-action="support">Join the Support Server</a>
+        </div>
+        <div class="support-grid">
+          <div class="support-tile"><h3>Setup</h3><p>Help adding Orbit to your server and getting it configured.</p></div>
+          <div class="support-tile"><h3>Licence issues</h3><p>Receiving, redeeming or checking your licence key.</p></div>
+          <div class="support-tile"><h3>Purchase issues</h3><p>Questions about your payment or order.</p></div>
+          <div class="support-tile"><h3>General help</h3><p>Anything else you need to know about Orbit.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta" aria-labelledby="cta-title">
+    <div class="container reveal">
+      <img class="mark" src="assets/orbit-mascot.png" alt="" loading="lazy" width="96" height="96">
+      <h2 id="cta-title">Ready to put your server in Orbit?</h2>
+      <p>One bot. One licence. Everything your server needs.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn btn-primary btn-lg" data-action="stripe">Buy Orbit · £7.99</a>
+        <a href="#" class="btn btn-secondary btn-lg" data-action="invite">Add to Discord</a>
+      </div>
+      <p class="hero-support">Need help? <a href="#" data-action="support">Join the support server</a></p>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/orbit-logo.png" alt="Orbit" width="90" height="30" loading="lazy">
+        <p>Everything your Discord server needs, in one bot.</p>
+      </div>
+      <nav class="footer-col" aria-label="Product">
+        <h2>Product</h2>
+        <a href="#features">Features</a>
+        <a href="#security">Security</a>
+        <a href="#commands">Commands</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+      <nav class="footer-col" aria-label="Get Orbit">
+        <h2>Get Orbit</h2>
+        <a href="#" data-action="stripe">Buy Orbit</a>
+        <a href="#" data-action="invite">Add to Discord</a>
+        <a href="#" data-action="support">Support server</a>
+      </nav>
+      <nav class="footer-col" aria-label="Legal">
+        <h2>Legal</h2>
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year">2026</span> Orbit.</span>
+      <span>Not affiliated with Discord Inc.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
