@@ -7,78 +7,202 @@
     supportUrl: "https://discord.gg/orbitdc"
   };
 
-  // ---- wire up buttons to config urls -------------------------------
+
+  /*
+   * ---------------------------------------------------------
+   * ORBIT ACTION LINKS
+   * ---------------------------------------------------------
+   */
+
   const actionMap = {
     invite: CONFIG.inviteUrl,
     stripe: CONFIG.stripeUrl,
     support: CONFIG.supportUrl
   };
-  document.querySelectorAll('[data-action]').forEach((el) => {
-    const url = actionMap[el.getAttribute('data-action')];
-    if (url) {
-      el.setAttribute('href', url);
-      el.setAttribute('target', '_blank');
-      el.setAttribute('rel', 'noopener');
-    }
+
+
+  document.querySelectorAll('[data-action]').forEach((element) => {
+
+    const action = element.getAttribute('data-action');
+    const url = actionMap[action];
+
+    if (!url) return;
+
+    element.setAttribute('href', url);
+    element.setAttribute('target', '_blank');
+    element.setAttribute('rel', 'noopener noreferrer');
+
   });
 
-  // ---- mobile nav toggle ---------------------------------------------
+
+  /*
+   * ---------------------------------------------------------
+   * MOBILE NAVIGATION
+   * ---------------------------------------------------------
+   */
+
   const navToggle = document.getElementById('navToggle');
   const navLinks = document.getElementById('navLinks');
+
   if (navToggle && navLinks) {
+
     navToggle.addEventListener('click', () => {
+
       const open = navLinks.classList.toggle('open');
-      navToggle.setAttribute('aria-expanded', String(open));
+
+      navToggle.setAttribute(
+        'aria-expanded',
+        String(open)
+      );
+
     });
-    navLinks.querySelectorAll('a').forEach((a) =>
-      a.addEventListener('click', () => {
+
+
+    navLinks.querySelectorAll('a').forEach((link) => {
+
+      link.addEventListener('click', () => {
+
         navLinks.classList.remove('open');
-        navToggle.setAttribute('aria-expanded', 'false');
-      })
-    );
+
+        navToggle.setAttribute(
+          'aria-expanded',
+          'false'
+        );
+
+      });
+
+    });
+
   }
 
-  // ---- footer year -----------------------------------------------------
-  const yearEl = document.getElementById('year');
-  if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // ---- generate a soft starfield inside given containers ---------------
+  /*
+   * ---------------------------------------------------------
+   * FOOTER YEAR
+   * ---------------------------------------------------------
+   */
+
+  const yearElement = document.getElementById('year');
+
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+  }
+
+
+  /*
+   * ---------------------------------------------------------
+   * STARFIELD
+   * ---------------------------------------------------------
+   */
+
   function buildStars(container, count) {
-    if (!container) return;
-    const frag = document.createDocumentFragment();
-    for (let i = 0; i < count; i++) {
-      const s = document.createElement('span');
-      s.className = 'star';
-      s.style.top = Math.random() * 100 + '%';
-      s.style.left = Math.random() * 100 + '%';
-      const size = Math.random() * 1.6 + 1;
-      s.style.width = size + 'px';
-      s.style.height = size + 'px';
-      s.style.setProperty('--dur', 2.5 + Math.random() * 4 + 's');
-      s.style.setProperty('--delay', Math.random() * 5 + 's');
-      frag.appendChild(s);
-    }
-    container.appendChild(frag);
-  }
-  buildStars(document.getElementById('heroStars'), 60);
-  buildStars(document.getElementById('ctaStars'), 40);
 
-  // ---- scroll reveal -----------------------------------------------------
-  const revealEls = document.querySelectorAll('.reveal');
-  if ('IntersectionObserver' in window && revealEls.length) {
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-            io.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
-    );
-    revealEls.forEach((el) => io.observe(el));
-  } else {
-    revealEls.forEach((el) => el.classList.add('is-visible'));
+    if (!container) return;
+
+    const fragment = document.createDocumentFragment();
+
+    for (let i = 0; i < count; i++) {
+
+      const star = document.createElement('span');
+
+      star.className = 'star';
+
+      star.style.top =
+        Math.random() * 100 + '%';
+
+      star.style.left =
+        Math.random() * 100 + '%';
+
+      const size =
+        Math.random() * 1.6 + 1;
+
+      star.style.width =
+        size + 'px';
+
+      star.style.height =
+        size + 'px';
+
+      star.style.setProperty(
+        '--dur',
+        2.5 + Math.random() * 4 + 's'
+      );
+
+      star.style.setProperty(
+        '--delay',
+        Math.random() * 5 + 's'
+      );
+
+      fragment.appendChild(star);
+
+    }
+
+    container.appendChild(fragment);
+
   }
+
+
+  buildStars(
+    document.getElementById('heroStars'),
+    60
+  );
+
+  buildStars(
+    document.getElementById('ctaStars'),
+    40
+  );
+
+
+  /*
+   * ---------------------------------------------------------
+   * SCROLL REVEAL
+   * ---------------------------------------------------------
+   */
+
+  const revealElements =
+    document.querySelectorAll('.reveal');
+
+
+  if (
+    'IntersectionObserver' in window &&
+    revealElements.length
+  ) {
+
+    const observer =
+      new IntersectionObserver(
+        (entries) => {
+
+          entries.forEach((entry) => {
+
+            if (!entry.isIntersecting) return;
+
+            entry.target.classList.add(
+              'is-visible'
+            );
+
+            observer.unobserve(
+              entry.target
+            );
+
+          });
+
+        },
+        {
+          threshold: 0.12,
+          rootMargin: '0px 0px -40px 0px'
+        }
+      );
+
+
+    revealElements.forEach((element) => {
+      observer.observe(element);
+    });
+
+  } else {
+
+    revealElements.forEach((element) => {
+      element.classList.add('is-visible');
+    });
+
+  }
+
 })();
