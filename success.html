@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Purchase Successful | Orbit</title>
+<meta name="description" content="Your Orbit purchase was completed successfully.">
+<link rel="icon" href="assets/orbit-mascot.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="nav-wrap">
+  <nav class="nav">
+    <a href="index.html" class="nav-logo"><img src="assets/orbit-logo.png" alt="Orbit"></a>
+    <ul class="nav-links">
+      <li><a href="index.html#features">Features</a></li>
+      <li><a href="index.html#security">Security</a></li>
+      <li><a href="index.html#commands">Commands</a></li>
+      <li><a href="index.html#pricing">Pricing</a></li>
+    </ul>
+    <div class="nav-cta"><a href="index.html#pricing" class="btn btn-primary">Get Orbit</a></div>
+  </nav>
+</div>
+<main class="simple-page"><div class="container">
+<section class="simple-card success-card">
+<div class="success-icon">✓</div>
+<h1>Payment received.</h1>
+<p class="lede">Thank you for purchasing Orbit. Your payment has been completed successfully.</p>
+<div class="next-steps">
+<div class="next-step"><strong>1. Join the Orbit Support Server</strong><span>Join our Discord so we can verify your purchase and provide your unique lifetime licence key.</span></div>
+<div class="next-step"><strong>2. Open a support ticket</strong><span>Open a ticket and provide your Stripe payment details when requested.</span></div>
+<div class="next-step"><strong>3. Redeem your licence</strong><span>Once your key is provided, add Orbit to your server and use <strong>/licence redeem</strong>.</span></div>
+</div>
+<div class="page-actions" style="justify-content:center;"><a class="btn btn-primary" href="https://discord.gg/orbitdc" target="_blank" rel="noopener">Join Support Server</a><a class="btn btn-ghost" href="index.html">Back to Orbit</a></div>
+</section>
+</div></main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Orbit.</span>
+      <span><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="https://discord.gg/orbitdc" target="_blank" rel="noopener">Support</a></span>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
