@@ -7,7 +7,7 @@
      ------------------------------------------------------------------ */
   const CONFIG = {
     inviteUrl: "https://discord.com/oauth2/authorize?client_id=1553813680800534701",
-    stripeUrl: "https://buy.stripe.com/bJe4gy3Z02aHedU3xG2oE00",
+    stripeUrl: "https://buy.stripe.com/cNi4gy3Z09D99XE4BK2oE02",
     supportUrl: "https://discord.gg/orbitdc"
   };
 
